@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+
+body {
+    /* height: 100px; */
+    background: #161616;
+    /* border: 4px solid deeppink; */
+    
+}
+
+
+.text {
+    border: 4px double deeppink;
+    border-radius: 40px;
+    z-index: 1;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 200;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-content: center; */
+    position: absolute;
+    /* top: 20%; */
+    /* left: 50%; */
+    /* right: 500px; */
+    transform: translate(-0%, -0%);
+    letter-spacing: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255 ,255, 255, 0.2));
+    animation: textanimation 1s ease-in-out infinite;;
+
+}
+
+@keyframes textanimation {
+    
+    0% { border-radius: 20px;   color: #34A853;  border: 4px double darkorange;}
+    25% { border-radius: 40px;  color: #FBBC05;  border: 4px double deepskyblue;}
+    50% { border-radius: 50px;  color: #EA4335;  border: 4px double yellow;}
+    75% { border-radius: 40px;  color: #4285F4;  border: 4px double deeppink;}
+    100% { border-radius: 20px; color: #4285F4;  border: 4px double darkviolet;}
+
+}
+
+.text span:nth-child(1) {
+
+    color: #4285F4;
+    animation: animText 1s ease-in-out infinite;
+}
+
+.text span:nth-child(2) {
+
+    color: #EA4335;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.text span:nth-child(3) {
+
+    color: #FBBC05;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+.text span:nth-child(4) {
+
+    color: #34A853;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+
+@keyframes animText {
+
+
+    0% {  font-weight: 200;  color: #34A853;  }
+    25% {  font-weight: 00; color: #FBBC05;  }
+    50% {  font-weight: 900; color: #EA4335;  }
+    75% {  font-weight: 00; color: #4285F4;  }
+    100% {  font-weight: 200; color: #4285F4;  }
+    
+    /* 0% {
+        
+
+    }
+
+    50% {
+        font-weight: 900;
+    }
+
+    100% {
+        font-weight: 200;
+    } */
+
+}
+
+
+.text span:nth-child(5) {
+
+    color: #4285F4;
+    animation: animMark 1s ease-in-out infinite;
+    font-weight: 900;
+    
+}
+
+
+@keyframes animMark {
+    
+    0% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+
+}
+
+.codewithharry {
+    border: 2px solid whitesmoke;
+    height: 320px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+
+
+
+.footer {
+    background: none;
+    /* display: flex; */
+    /* margin: 50px; */
+    display: block;
+    margin: auto;
+    /* justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end; */
+    background-color: snow;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@keyframes myanimation {
+
+    0% { border-radius: 20px;   color: deeppink;  border: 2px solid darkorange;}
+    25% { border-radius: 20px;  color: darkcyan;  border: 2px solid deepskyblue;}
+    50% { border-radius: 40px;  color: darkorange;  border: 2px solid darkturquoise;}
+    75% { border-radius: 20px;  color: darkviolet;  border: 2px solid deeppink;}
+    100% { border-radius: 20px; color: limegreen;  border: 2px solid darkviolet;}
+
+}
+
+
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo img { 
+    width: 50px;
+    height:  50px;
+    border: 3px solid hotpink;
+    border-radius: 100px;
+}
+
+.logo img:hover {
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+}
+
+
+.nav-list {
+    
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+
+
+.nav-list li {
+    list-style-type: none;
+    padding: 26px 30px;
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid darkolivegreen;
+    border-radius: 15px;
+    padding: 3px 6px;
+    
+
+}
+
+.nav-list li a:hover {
+    padding: 3px 6px;
+    color: lawngreen;
+    border-radius: 15px;
+    border: 2px solid darkorange;
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.rightnav {
+    width: 50%;
+    text-align: right;
+}
+
+#search {
+    padding: 4px;
+    font-size: 17px;
+    border: 2px solid lawngreen;
+    border-radius: 15px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(/2-CSS/Files/Images/bmw-x7.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    max-width: 50%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+
+.firsthalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.secondhalf {
+    width: 30%;
+}
+
+.secondhalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.textbig {
+    font-size: 38px;
+}
+
+.textsmall {
+    font-size: 18px;
+}

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+
+
+.codewithharry {
+    background: #161616;
+    border: 3px solid lightcoral;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.text {
+    border: 4px double deeppink;
+    border-radius: 40px;
+    padding: 20px;
+    z-index: 1;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    letter-spacing: 5px;
+    box-shadow: 6px -3px 8px 1px deeppink, 6px 3px 8px 1px darkturquoise, -6px 3px 8px 1px darkviolet, -6px -3px 8px 1px deepskyblue ;
+    
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255 ,255, 255, 0.2)); */
+    animation: textanimation 1s ease-in-out infinite;;
+
+}
+
+@keyframes textanimation {
+    
+    0% { border-radius: 20px;   color: #34A853;  border: 4px double darkorange;}
+    25% { border-radius: 40px;  color: #FBBC05;  border: 4px double deepskyblue;}
+    50% { border-radius: 50px;  color: #EA4335;  border: 4px double yellow;}
+    75% { border-radius: 40px;  color: #4285F4;  border: 4px double deeppink;}
+    100% { border-radius: 20px; color: #4285F4;  border: 4px double darkviolet;}
+
+}
+
+.text span:nth-child(1) {
+
+    color: #4285F4;
+    animation: animText 1s ease-in-out infinite;
+}
+
+.text span:nth-child(2) {
+
+    color: #EA4335;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+.text span:nth-child(3) {
+
+    color: #FBBC05;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+
+.text span:nth-child(4) {
+
+    color: #34A853;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+
+@keyframes animText {
+
+    0% {  font-weight: 200;  color: #34A853;  }
+    25% {  font-weight: 500; color: #FBBC05;  }
+    50% {  font-weight: 900; color: #EA4335;  }
+    75% {  font-weight: 500; color: #4285F4;  }
+    100% {  font-weight: 200; color: #4285F4;  }
+}
+
+
+.text span:nth-child(5) {
+
+    color: #ff0000;
+    animation: animMark 1s ease-in-out infinite;
+    font-weight: 900;
+    
+}
+
+
+@keyframes animMark {
+    
+    0% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+
+}
+
+
